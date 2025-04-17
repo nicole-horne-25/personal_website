@@ -37,15 +37,15 @@ nav {
 .menu-item > a {
     display: block;
     color: white;
-    text-decoration: none;
     padding: 30px 50px;
-    background-color: #1758a7;
+    text-decoration: none;
+    background-color: #f785de;
     transition: background-color 0.3s ease;
     font-size: 40px;
 }
 
 .menu-item > a:hover {
-    background-color: #f5f273;
+    background-color: #f785de;
     
 }
 
@@ -55,7 +55,7 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f3eb56;
+    background-color: #f785de;
     min-width: 160px;
     list-style-type: none;
     padding: 0;

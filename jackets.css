@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #fdfdfd;
+  }
+  
+  .collage {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .item {
+    position: relative;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .item h3 {
+    margin: 0.3rem 0 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .item p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  /* Custom placements */
+  .item1 { grid-column: span 3; }
+  .item2 { grid-column: span 2; grid-row: span 2; }
+  .item3 { grid-column: span 3; }
+  .item4 { grid-column: span 2; }
+  .item5 { grid-column: span 4; }

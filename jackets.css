@@ -22,11 +22,7 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
   
-  .item img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-  }
+
   
   .item h3 {
     margin: 0.3rem 0 0.5rem;
@@ -39,9 +35,119 @@ body {
     color: #666;
   }
   
-  /* Custom placements */
+ 
+  .item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .item a:hover {
+    text-decoration: underline;
+  }
+
+  .item img {
+    width: 100%;
+    height: 300px; 
+    object-fit: scale-down;   /* crops the image in a clean way */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+
+  .item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+  }
+
   .item1 { grid-column: span 3; }
-  .item2 { grid-column: span 2; grid-row: span 2; }
-  .item3 { grid-column: span 3; }
-  .item4 { grid-column: span 2; }
-  .item5 { grid-column: span 4; }
+.item2 { grid-column: span 2; }
+.item3 { grid-column: span 3; }
+.item4 { grid-column: span 2; }
+.item5 { grid-column: span 4; }
+
+body {
+    font-family: 'Didot', serif; /* or 'Playfair Display', etc. */
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  .item h3 {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+  }
+
+  @media (max-width: 768px) {
+    .collage {
+      grid-template-columns: 1fr; /* stack items vertically on phones */
+    }
+  }
+
+
+  .item1 {
+    grid-column: span 3;
+    background-color: #fef6f0;  /* soft blush */
+  }
+  
+  .item2 {
+    grid-column: span 2;
+    background-color: #f0f7f6;  /* pale mint */
+  }
+  
+  .item3 {
+    grid-column: span 3;
+    background-color: #f3f0fa;  /* soft lavender */
+  }
+  
+  .item4 {
+    grid-column: span 2;
+    background-color: #fff8f8;  /* warm ivory pink */
+  }
+  
+  .item5 {
+    grid-column: span 4;
+    background-color: #f6f6ff;  /* soft sky blue */
+  }
+
+  .item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .item {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .home-button {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .home-button a {
+    display: inline-block;
+    background-color: #e9e0db; /* soft beige-pink */
+    color: #333;
+    text-decoration: none;
+    font-family: 'Didot', serif;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .home-button a:hover {
+    background-color: #d4c9c2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }

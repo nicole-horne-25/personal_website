@@ -1,133 +1,75 @@
 
-h1 {
-    position: relative;
-    font-family: Arial, sans-serif;
-    margin: 10;
-    padding: 20;
-    font-size: 50px;
-    text-align: center;
-    z-index: 1;
-}
-
-p{
-    position: relative;
-    font-family: Arial, sans-serif;
-    margin: 10;
-    padding: 20;
-    font-size: 20px;
-    text-align: center;
-    z-index: 1;
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 10;
-    padding: 10;
-    flex-direction: column;
-    height: 100vh;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    background-color: #fdfdfd;
+    text-align: center;
 }
 
-
-nav {
-    background-color: #7fb1dd;
-    padding: 50px;
+/* Hero Section: Background Image + Text */
+.hero {
+    background-image: url('https://github.com/nicole-horne-25/personal_website/blob/main/IMG_4778.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 2rem;
+    height: 60vh;
 }
 
+.hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+/* Navigation Menu */
 .menu {
-    list-style-type: none;
-    margin: 10;
-    padding: 10;
+    list-style: none;
     display: flex;
-}
-
-.menu-item {
-    position: relative; 
-}
-
-.menu-item > a {
-    display: block;
-    color: white;
-    padding: 30px 50px;
-    text-decoration: none;
-    background-color: #f785de;
-    transition: background-color 0.3s ease;
-    font-size: 40px;
-}
-
-.menu-item > a:hover {
-    background-color: #f785de;
-    
-}
-
-
-.dropdown {
-    display: none; 
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #f785de;
-    min-width: 160px;
-    list-style-type: none;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
     padding: 0;
-    margin: 0;
 }
 
-.dropdown li {
-    padding: 10px;
-}
-
-.dropdown li a {
-    color: white;
+.menu-item a {
     text-decoration: none;
-    display: block;
-    font-size: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.dropdown li a:hover {
-    background-color: #ef9fd3;
+.menu-item a:hover {
+    background-color: #f3f0fa;
+    transform: scale(1.05);
 }
 
-
-.menu-item:hover .dropdown {
-    display: block;
-}
-
-
-.dropdown-link {
-    color: #f0a5c7; 
-    text-decoration: underline; 
-}
-
-.dropdown-link:hover {
-    background-color: #666; 
-}
-
-.content {
-    flex-grow: 1; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
-img {
-    height: auto;
-    width: 100%;
-    object-fit: scale-down;
-    margin-top: -500px;
-    z-index: -1;
-}
-
+/* Footer */
 .footer {
-    position: fixed;
-    bottom: 0;   
-    left: 0;    
-    width: 100%; 
-    color: rgb(149, 246, 246);  
-    text-align: center; 
-    padding: 10px 0; 
-    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f3f0fa;
+    margin-top: 2rem;
 }
 
-.footer h1 {
-    font-size: 28px ;
+.footer p {
+    font-size: 0.9rem;
+    color: #777;
 }
-

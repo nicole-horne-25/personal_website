@@ -1,5 +1,5 @@
 
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,29 +13,27 @@ body {
     text-align: center;
 }
 
-/* Hero Section: Background Image + Text */
 .hero {
     background-image: url('https://github.com/nicole-horne-25/personal_website/blob/main/IMG_4778.jpg?raw=true');
     background-size: cover;
     background-position: center;
     color: white;
     padding: 5rem 2rem;
-    height: 60vh;
+    height: 60vh; /*adapted this code from ChatGPT*/
 }
 
 .hero h1 {
     font-size: 3rem;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /*adapted this code from ChatGPT*/
 }
 
 .hero p {
     font-size: 1.2rem;
     font-weight: 300;
-    margin-top: 0.5rem;
+    margin-top: 0.5rem; /*adapted this code from ChatGPT*/
 }
 
-/* Navigation Menu */
 .menu {
     list-style: none;
     display: flex;
@@ -45,6 +43,16 @@ body {
     padding: 0;
 }
 
+.menu-item > span {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+  }
+
 .menu-item a {
     text-decoration: none;
     font-size: 1.1rem;
@@ -53,24 +61,22 @@ body {
     text-transform: uppercase;
     padding: 1rem 2rem;
     border-radius: 50px;
-    transition: background-color 0.3s, transform 0.3s;
 }
 
-.menu-item a:hover {
+.menu :hover {
     background-color: #f3f0fa;
-    transform: scale(1.05);
+    transform: scale(.5); /*adapted this code from ChatGPT*/
 }
 
-/* Footer */
 .footer {
     text-align: center;
     padding: 1rem;
-    background-color: #f3f0fa;
+    background-color: #eae3fa;
     margin-top: 2rem;
 }
 
 .footer p {
-    font-size: 0.9rem;
-    color: #777;
+    font-size: 2rem;
+    color: #ababab;
 }
 

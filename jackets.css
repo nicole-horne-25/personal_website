@@ -93,27 +93,27 @@ body {
 
   .item1 {
     grid-column: span 3;
-    background-color: #fef6f0;  /* soft blush */
+    background-color: #fdf1f5;  
   }
   
   .item2 {
     grid-column: span 2;
-    background-color: #f0f7f6;  /* pale mint */
+    background-color: #e9f9fa;  
   }
   
   .item3 {
     grid-column: span 3;
-    background-color: #f3f0fa;  /* soft lavender */
+    background-color: #f3f0fa;  
   }
   
   .item4 {
     grid-column: span 2;
-    background-color: #fff8f8;  /* warm ivory pink */
+    background-color: #eefdef;  
   }
   
   .item5 {
-    grid-column: span 4;
-    background-color: #f6f6ff;  /* soft sky blue */
+    grid-column: span 5;
+    background-color: #fcfce0;  
   }
 
   .item {
@@ -135,7 +135,7 @@ body {
   
   .home-button a {
     display: inline-block;
-    background-color: #e9e0db; /* soft beige-pink */
+    background-color: #e9e0db; 
     color: #333;
     text-decoration: none;
     font-family: 'Didot', serif;
